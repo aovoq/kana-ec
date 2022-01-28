@@ -1,0 +1,412 @@
+@charset 'UTF-8';
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   min-height: 100%;
+   position: relative;
+}
+
+body {
+   font-size: 16px;
+   font-family: -apple-system, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+      Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   line-height: 1.5;
+   background: #b28267;
+   margin-bottom: 5rem;
+}
+
+a {
+   color: #000;
+   text-decoration: none;
+}
+
+/* NOTE: Header Style */
+
+.header {
+   background: #722e22;
+}
+
+.header__wrapper {
+   display: flex;
+   justify-content: space-between;
+   max-width: 930px;
+   margin: 0 auto;
+   padding: 0.5rem;
+}
+
+.header__nav {
+   display: flex;
+   align-items: center;
+   list-style: none;
+}
+
+.header__nav--item {
+   margin-left: 2rem;
+   color: #fff;
+}
+
+.header__nav--item a {
+   color: #fff;
+}
+
+.hero-img {
+   width: 100%;
+   min-height: 350px;
+   height: 50vw;
+   max-height: 500px;
+   background: url('../img/hero-cakes.jpg');
+   background-size: cover;
+}
+
+.hero-img.baked {
+   background: url('../img/hero-bakedsweets.jpg');
+   background-size: cover;
+}
+
+.hero-img.cakes {
+   background: url('../img/hero-cakes.jpg');
+   background-size: cover;
+}
+
+.hero-img.choco {
+   background: url('../img/hero-chocolate.jpg');
+   background-size: cover;
+}
+
+.container {
+   max-width: 930px;
+   margin: 0 auto;
+}
+
+.indexWrapper {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 9rem;
+   padding: 8rem 0 8rem 0;
+}
+
+.indexWrapper .img_wrap {
+   overflow: hidden;
+}
+
+.indexWrapper img {
+   width: 100%;
+   transition: 0.5s;
+   transform: scale(1.01);
+}
+
+.indexWrapper img:hover {
+   transform: scale(1.2);
+}
+
+.section__title {
+   font-size: 50px;
+   font-weight: normal;
+   line-height: 1;
+   margin-bottom: 1rem;
+}
+
+.section__title--sub {
+   font-size: 28px;
+   line-height: 1;
+   margin-bottom: 3rem;
+}
+
+.section__img {
+   width: 100%;
+}
+
+/* NOTE: Footer Style */
+.footer {
+   background: #722e22;
+   bottom: 0;
+   position: absolute;
+   width: 100%;
+}
+
+.footer__wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 930px;
+   margin: 0 auto;
+   padding: 0.5rem;
+}
+
+/* NOTE: Category Style */
+
+.categoryTitle {
+   font-size: 50px;
+   font-weight: normal;
+   line-height: 1;
+   margin-bottom: 1rem;
+   text-align: center;
+   margin-top: 3rem;
+}
+
+.categoryTitle--sub {
+   font-size: 28px;
+   line-height: 1;
+   margin-bottom: 3rem;
+   text-align: center;
+}
+
+.itemList {
+   margin: 5rem 0;
+   margin-bottom: 10rem;
+   display: flex;
+   list-style: none;
+   flex-wrap: wrap;
+   justify-content: center;
+   row-gap: 3rem;
+}
+
+.itemList__item {
+   text-align: center;
+   width: 40%;
+}
+
+.itemList__img {
+   width: 300px;
+   height: 300px;
+}
+
+.itemList__title {
+   font-size: 1.5rem;
+}
+
+.itemList__price {
+   font-size: 1.3rem;
+}
+
+/* SignUp Style */
+.formTitle {
+   text-align: center;
+   font-size: 2rem;
+   padding: 1.7rem;
+   border-bottom: 4px solid #42210b;
+}
+
+.formTitle--sub {
+   font-size: 1.75rem;
+   font-weight: normal;
+   border-bottom: 1px solid #42210b;
+   padding: 0.25rem;
+}
+
+.form__item {
+   font-size: 1.1rem;
+   padding: 0.25rem 0.25rem 1rem 0.25rem;
+   border-bottom: 1px solid #42210b;
+   padding-right: 2rem;
+}
+
+.form__item.login {
+   border: none;
+   margin: 60px 0;
+}
+
+.err {
+   text-align: center;
+   color: #eee;
+   font-weight: bold;
+   background: #f55;
+   padding: 0.5rem;
+   border-radius: 2rem;
+   font-size: 1.5rem;
+}
+
+.form__item label {
+   display: block;
+}
+
+.form__item label.name {
+   display: inline-block;
+}
+
+.form__item input {
+   width: 92%;
+   height: 2.1rem;
+   border-radius: 0.3rem;
+   font-size: 1.25rem;
+   margin: 0.4rem 0;
+   margin-left: 8%;
+}
+
+.form__item input.lastName,
+.form__item input.firstName {
+   width: 70%;
+}
+
+.form__item input.zipFirst,
+.form__item input.zipSecond {
+   width: 20%;
+   display: inline-block;
+}
+
+.form__item input.zipSecond {
+   margin-left: 0;
+}
+
+.form__item input.pref {
+   width: 60%;
+}
+
+.form__name {
+   display: flex;
+}
+
+.form__name--inner {
+   width: 50%;
+}
+
+.form__name--inner:first-child input {
+   margin-left: 11%;
+}
+
+.form__name--inner:last-child {
+   text-align: right;
+}
+
+.form__button {
+   background: #603813;
+   color: #fff;
+   font-size: 1.5rem;
+   width: 500px;
+   padding: 1rem;
+   border-radius: 0.4rem;
+   margin: 2.5rem auto;
+   display: block;
+}
+
+/* NOTE: Cart Style */
+.cart__title {
+   text-align: center;
+   font-size: 2rem;
+   padding: 1.7rem;
+   border-bottom: 4px solid #42210b;
+}
+
+.cart__wrapper {
+   padding: 2rem 0;
+   display: flex;
+   gap: 2.2rem;
+   flex-direction: column;
+}
+
+.cart__item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 30px;
+   padding: 0 2rem;
+}
+
+.cart__item img {
+   width: 200px;
+}
+
+.cart__item--detail {
+   flex: 1;
+}
+
+.cart__item--name {
+   font-size: 1.1rem;
+   margin-bottom: 8px;
+}
+
+.cart__item--price {
+   margin-bottom: 8px;
+}
+
+.cart__deleteButton {
+   background: #603813;
+   color: #fff;
+   font-size: 1.5rem;
+   border: 1px solid #000;
+   padding: 1rem;
+   border-radius: 0.4rem;
+   width: 150px;
+}
+
+.cart__empty {
+   font-size: 1.5rem;
+   text-align: center;
+}
+
+.cart__total {
+   border-top: 1px solid #42210b;
+   padding: 1rem 2rem;
+   font-size: 1.5rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.cart__button {
+   background: #603813;
+   color: #fff;
+   font-size: 1.5rem;
+   border: 1px solid #000;
+   padding: 1rem;
+   margin: 2rem auto;
+   border-radius: 0.4rem;
+   width: 500px;
+   display: block;
+   text-align: center;
+}
+
+/* NOTE: Buy Style */
+
+.buy__headline {
+   margin: 0.5rem;
+}
+
+.address__wrapper {
+   border-top: 1px solid #42210b;
+   border-bottom: 1px solid #42210b;
+}
+
+.address__table--item {
+   padding: 0.7rem 0;
+   display: block;
+}
+
+.address__table--item td:nth-child(2) {
+   padding: 0 1rem;
+}
+
+/* NOTE: Done Style */
+
+.done__text {
+   margin: 6rem 0 2rem 0;
+   text-align: center;
+   font-size: 1.8rem;
+}
+
+.done__text--small {
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+.done__back {
+   margin-top: 2rem;
+   display: block;
+   color: #603813;
+   text-align: center;
+   font-size: 0.8rem;
+}
+
+.done__back:hover {
+   opacity: 0.8;
+}

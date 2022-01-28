@@ -1,0 +1,25 @@
+.itemImage {
+   width: 200px;
+}
+
+.priceInput {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #000;
+   height: 18px;
+   border-radius: 3px;
+}
+
+.yen {
+   padding: 0 3px;
+   border-right: 1px solid #000;
+   height: 18px;
+   line-height: 18px;
+}
+
+.priceInput input {
+   border: none;
+   outline: none;
+   box-sizing: border-box;
+}
