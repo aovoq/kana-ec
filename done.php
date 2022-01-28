@@ -12,7 +12,7 @@ $orderJson = json_decode($orderJson);
 $orderJson[] = array(
    "email" => $_SESSION['email'],
    "order" => $_SESSION['cart'],
-   "done" => false
+   "todo" => false
 );
 $orderJson = json_encode($orderJson);
 file_put_contents('order.json', $orderJson);
