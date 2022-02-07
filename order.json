@@ -1,17 +1,1 @@
-[
-   {
-      "email": "asdfasdf.h@gmail.com",
-      "order": { "20220123162437": 5, "20220123162445": 3 },
-      "todo": true
-   },
-   {
-      "email": "asdfasdf.h@gmail.com",
-      "order": { "20220123162517": 4, "20220123162617": 5 },
-      "todo": false
-   },
-   {
-      "email": "voxel@icloud.com",
-      "order": { "20220125044516": 6, "20220123162537": 6 },
-      "todo": false
-   }
-]
+[{"email":"asdfasdf.h@gmail.com","order":{"20220123162437":5,"20220123162445":3},"todo":true},{"email":"asdfasdf.h@gmail.com","order":{"20220123162517":4,"20220123162617":5},"todo":true},{"email":"voxel@icloud.com","order":{"20220125044516":6,"20220123162537":6},"todo":false},{"email":"voxel@icloud.com","order":{"20220123162437":4},"todo":false},{"email":"kana@example.com","order":{"20220123162437":4,"20220123162517":7},"todo":false},{"email":"asdfasdf.h@gmail.com","order":{"20220123162437":2,"20220123162509":4},"todo":false}]
