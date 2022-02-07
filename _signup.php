@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if ($_POST['token'] != $_SESSION['token']) {
    $_SESSION = array();
    header("Location: index.php");
