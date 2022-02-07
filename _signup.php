@@ -1,4 +1,11 @@
 <?php
+
+if ($_POST['token'] != $_SESSION['token']) {
+   $_SESSION = array();
+   header("Location: index.php");
+   exit();
+}
+
 $email = $_POST['email'];
 $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $lastName = $_POST['lastName'];

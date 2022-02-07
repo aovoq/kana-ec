@@ -1,11 +1,16 @@
 <?php
 include('./components/Header.php');
 publicRoute($isLogin);
+
+$token = bin2hex(random_bytes(32));
+$_SESSION['token'] = $token;
+
 ?>
 
 <h2 class="formTitle">新規会員登録</h2>
 <main class="container">
    <form action="_signup.php" method="post">
+      <input type="hidden" name="token" value="<?= $token ?>">
       <div class=>
          <h3 class='formTitle--sub'>お客さま情報入力</h3>
       </div>
